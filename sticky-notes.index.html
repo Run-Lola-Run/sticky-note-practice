@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="./sticky-notes.style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="headerBox">
+            <h1>Reminders</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="sticky yellow" onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">Don't forget!</div>
+            <div class="sticky orange" onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">This is just a practice bit,</div>
+        </div>
+        <div class="row">    
+            <div class="sticky pink" onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">while I try to figure out,</div>
+            <div class="sticky green" onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">how to upload my work to git!</div>
+        </div>
+    </div>    
+    <script link src="./sticky-notes.script.js"></script>
+</body>
+</html>
